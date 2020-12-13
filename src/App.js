@@ -58,7 +58,8 @@ function App() {
 
   return (
     <div className="App">
-      <div class="lines">
+      {/* Backgroundas */}
+      <div class="lines">   
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
@@ -72,7 +73,9 @@ function App() {
 
         <Results results={state.results} openPopup={openPopup} />
 
-        {(typeof state.selected.Title != "undefined") ? <Popup selected={state.selected} closePopup={closePopup} /> : false}
+      
+
+        {(typeof state.selected.Title != "undefined") ? <Popup selected={state.selected} closePopup={closePopup} /> : false}   {/* Sita vieta reikia sutvarkyt, kad ismestu error message */}
 
       </main>
     </div>
